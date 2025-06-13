@@ -9,6 +9,7 @@
 */
 
 #include "ist8310.h"
+#include <math.h>
 
 #define DBG_TAG "ist8310"
 #define DBG_LVL DBG_INFO

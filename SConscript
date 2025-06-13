@@ -9,7 +9,7 @@ if GetDepend(['PKG_USING_IST8310_SAMPLE']):
     src += Glob('sample/*.c')
 
 CPPDEFINES = []
-CPPPATH = [cwd + 'inc']
+CPPPATH = [os.path.join(cwd, 'inc')]
 
 if GetDepend(['PKG_USING_IST8310']):
     group = DefineGroup('IST8310', src, depend = ['PKG_USING_IST8310'], 
